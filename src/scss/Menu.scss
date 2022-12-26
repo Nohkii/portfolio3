@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.menu-contatiner {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  // background-color: var(--color-point);
+  align-items: center;
+}
+.menu-contatiner a {
+  text-decoration: none;
+  color: black;
+  padding: 3em;
+  width: 4%;
+  height: 4%;
+}
+.menu-name {
+  font-family: var(--font-UbuntuRegular);
+  font-weight: lighter;
+  color: var(--color-main-skyblue);
+  font-size: 1.2em;
+}
+.menu-name:hover {
+  color: hsl(204, 92%, 35%);
+  text-decoration: underline;
+}
+@media (max-width: 425px) {
+  .menu-name b{
+    font-size: 0.8em;
+  }
+  .menu-contatiner a {
+    padding: 1.7em;
+  }
+  .menu-contatiner{
+    width: 100vw;
+    margin: 0 auto;
+  } 
+}
+@media (max-width: 600px) {
+  .menu-name {
+    font-size: 1em;
+  }
+  .menu-contatiner a {
+    padding: 2.2em;
+  }
+  .menu-contatiner{
+    width: 100vw;
+    margin: 0 auto;
+  } 
+}

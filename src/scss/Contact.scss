@@ -1,0 +1,95 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+.contact-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: url(../../public/images/bluecloudback.webp) no-repeat;
+  background-size: cover;
+}
+.contact-iconBox {
+  display: flex;
+}
+.contact-phoneBox,
+.contact-mailBox,
+.contact-gitBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2.5rem;
+}
+.contact-phoneBox {
+  margin-right: 2.5rem;
+}
+.contact-phone,
+.contact-mail,
+.contact-git {
+  text-align: center;
+  display: inline;
+}
+.contact-textBox,
+.contact-detail {
+  font-family: "NanumSquareNeo-Variable";
+}
+.contact-detail-intro {
+  font-size: 1.3em;
+}
+.contact-git a,
+.contact-mail a,
+.contact-phone a {
+  color: black;
+}
+.contact-git:hover,
+.contact-mail:hover,
+.contact-phone:hover {
+  transform: scale(1.4);
+}
+
+@media (max-width: 425px) {
+  .contact-phoneBox,
+  .contact-mailBox,
+  .contact-gitBox {
+    margin-left: 1rem;
+  }
+  .contact-detail-intro {
+    font-size: 0.8rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-detail {
+    font-size: 0.4rem;
+  }
+  .contact-git:hover,
+  .contact-mail:hover,
+  .contact-phone:hover {
+    transform: scale(1.1);
+  }
+  // .contact-iconBox {
+  //   width: 70%;
+  //   margin: 10%;
+  // }
+}
+@media (max-width: 768px) {
+  .contact-phoneBox,
+  .contact-mailBox,
+  .contact-gitBox {
+    margin-left: 1.2rem;
+  }
+  .contact-detail-intro {
+    font-size: 0.9rem;
+  }
+  .contact-detail {
+    font-size: 0.6rem;
+  }
+  .contact-git:hover,
+  .contact-mail:hover,
+  .contact-phone:hover {
+    transform: scale(1.2);
+  }
+}
