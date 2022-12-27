@@ -1,10 +1,9 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
-  //   width: 100%;
-  // height: 100%;
-  //*는 전체를 의미하는거니까 굳이 가로 세로 주지않아도 괜찮..
 }
+
 .about-container {
   display: flex;
   width: 100%;
@@ -14,14 +13,15 @@
   align-items: center;
   justify-content: center;
 }
+
 .about-leftBox {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
 }
+
 .about-photo {
   width: 40%;
   height: 60%;
@@ -29,6 +29,7 @@
   background-size: cover;
   margin-top: 3.5em;
 }
+
 .about-name {
   margin-top: 2.2em;
   font-family: "NanumSquareNeo-Variable";
@@ -38,12 +39,14 @@
   box-shadow: #6fc9f653 3px 3px 3.5px;
   padding: 1em;
 }
+
 .about-rightBox {
   width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
 .about-carrer,
 .about-introduce,
 .about-skill {
@@ -53,54 +56,65 @@
   box-shadow: #6fc9f653 3px 3px 3.5px;
   padding: 1em;
 }
+
 .about-introduce,
 .about-skill {
   margin-top: 2.5em;
 }
+
 .about-semiTitle {
   font-family: "bitbit";
   font-size: 1.3em;
 }
+
 .about-detailtxt {
   font-family: "NanumSquareNeo-Variable";
 }
+
 .about-left-detailtxt {
   font-size: 0.95em;
 }
+
 @media (max-width: 525px) {
   .about-introduce {
     display: none;
   }
+
   .about-leftBox {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .about-photo {
-width: 80%;
-height: 30%;
-      margin-top: 6em;
-    }
   }
+  .about-leftBox .about-photo {
+    width: 80%;
+    height: 30%;
+    margin-top: 6em;
+  }
+
   .about-name {
     margin-top: 1em;
     font-size: 1em;
     background-color: #ffffffdb;
     width: 70%;
   }
+
   .about-carrer,
-  .about-skill {
+.about-skill {
     width: 90%;
   }
+
   .about-skill {
     margin-top: 0.7em;
   }
+
   .about-semiTitle {
     font-size: 1em;
   }
+
   .about-detailtxt,
-  .about-left-detailtxt {
+.about-left-detailtxt {
     font-size: 0.8em;
   }
 }
@@ -112,49 +126,56 @@ height: 30%;
     flex-direction: column;
     align-items: center;
   }
+
   .about-photo {
     width: 60%;
     height: 40%;
     margin-top: 2.5em;
   }
+
   .about-name {
     margin-top: 1em;
     font-size: 1em;
     background-color: #ffffffdb;
     width: 70%;
   }
-  .about-carrer,
-  .about-introduce,
-  .about-skill {
-    width: 90%;
-    padding: 0.8em;
-  }
-  .about-introduce,
-  .about-skill {
-    margin-top: 0.7em;
-  }
-  .about-semiTitle {
-    font-size: 1em;
-  }
-  .about-detailtxt,
-  .about-left-detailtxt {
-    font-size: 0.8em;
-  }
-  
-}
-@media (max-width: 1024px){
-  .about-carrer,
-  .about-introduce,
-  .about-skill {
-    width: 90%;
-  }
-  .about-introduce,
-  .about-skill {
-    margin-top: 0.5em;
-  }
+
   .about-carrer,
 .about-introduce,
 .about-skill {
-  padding: 0.8em;
+    width: 90%;
+    padding: 0.8em;
+  }
+
+  .about-introduce,
+.about-skill {
+    margin-top: 0.7em;
+  }
+
+  .about-semiTitle {
+    font-size: 1em;
+  }
+
+  .about-detailtxt,
+.about-left-detailtxt {
+    font-size: 0.8em;
+  }
 }
+@media (max-width: 1024px) {
+  .about-carrer,
+.about-introduce,
+.about-skill {
+    width: 90%;
+  }
+
+  .about-introduce,
+.about-skill {
+    margin-top: 0.5em;
+  }
+
+  .about-carrer,
+.about-introduce,
+.about-skill {
+    padding: 0.8em;
+  }
 }

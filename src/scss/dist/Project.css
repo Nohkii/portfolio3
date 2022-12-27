@@ -17,7 +17,7 @@ html {
 .project-container .project-box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
   width: 80vw;
   height: 80vh;
@@ -26,8 +26,8 @@ html {
 .project-left-box,
 .project-mid-box,
 .project-right-box {
-  width: 25%;
-  height: 60%;
+  width: 22vw;
+  height: 48vh;
   border: 1px solid white;
   margin: 0 auto;
   display: flex;
@@ -40,12 +40,7 @@ html {
 }
 
 .project-left-box:hover {
-  box-shadow: #ffc40090 4px 4px 5px;
-  cursor: pointer;
-}
-
-.project-mid-box:hover {
-  box-shadow: rgba(129, 32, 208, 0.515) 4px 4px 5px;
+  box-shadow: #5bc6fb87 4px 4px 5px;
   cursor: pointer;
 }
 
@@ -64,16 +59,50 @@ html {
   background-size: cover;
 }
 
+.project-mid-box:hover {
+  box-shadow: #5bc6fb87 4px 4px 5px;
+  cursor: pointer;
+}
+
+.project-all-right,
+.project-all-middle,
+.project-all-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-textBox {
+  margin: 0 auto;
+  margin-top: 1em;
+  font-family: var(--font-UbuntuRegular);
+  font-weight: 700;
+  color: rgba(13, 169, 248, 0.881);
+  text-shadow: 2px 2px #b8e1f6b7;
+  padding: 1px;
+  font-size: 1.2em;
+}
+
 @media (max-width: 425px) {
   .project-box {
     flex-direction: column;
   }
 
+  .project-all-right,
+.project-all-middle,
+.project-all-left {
+    width: 100%;
+    height: 100%;
+  }
+
   .project-left-box,
 .project-mid-box,
 .project-right-box {
-    width: 45%;
-    height: 30%;
+    width: 40vw;
+    height: 20vh;
+  }
+
+  .project-textBox {
+    font-size: 0.7em;
   }
 }
 @media (max-width: 768px) {
@@ -81,10 +110,21 @@ html {
     flex-direction: column;
   }
 
+  .project-all-right,
+.project-all-middle,
+.project-all-left {
+    width: 100%;
+    height: 100%;
+  }
+
   .project-left-box,
 .project-mid-box,
 .project-right-box {
-    width: 45%;
-    height: 35%;
+    width: 40vw;
+    height: 20vh;
+  }
+
+  .project-textBox {
+    font-size: 0.7em;
   }
 }
