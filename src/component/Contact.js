@@ -11,8 +11,8 @@ const Contact = () => {
         <div className="contact-textBox">
           <br />
           <div className="contact-detail-intro">
-            <b>구인 관련</b> 및 <b>궁금한 점</b>이 있으시다면, 아래 연락처를 통해 <b>연락
-            바랍니다.</b>
+            <b>구인 관련</b> 및 <b>궁금한 점</b>이 있으시다면, 아래 연락처를
+            통해 <b>연락 바랍니다.</b>
           </div>
         </div>
         <div className="contact-iconBox">

@@ -5,7 +5,15 @@ const Project = () => {
   return (
     <div className="project-container">
       <div className="project-box">
-        <div className="project-left-box" ></div>
+        <div
+          className="project-left-box"
+          onClick={() =>
+            window.open(
+              "https://www.youtube.com/watch?v=gUwWQq-z6lU&t=3s",
+              "_blank"
+            )
+          }
+        ></div>
         <br />
         {/* <div className="project-left-detail">API를 활용한 레시피 검색 사이트</div> */}
         <div
@@ -16,11 +24,8 @@ const Project = () => {
               "_blank"
             )
           }
-        >
-
-        </div>
+        ></div>
         <div className="project-right-box"></div>
-        
       </div>
     </div>
   );
