@@ -16,6 +16,7 @@ const Project = () => {
               )
             }
           ></div>
+          <div className="project-over"></div>
           <div className="project-textBox">Food Search API Site</div>
         </div>
 
@@ -29,12 +30,14 @@ const Project = () => {
               )
             }
           ></div>
+          <div className="project-over"></div>
           <div className="project-textBox">Todo List</div>
         </div>
         <div className="project-all-right">
           <Link to="/">
             <div className="project-right-box"></div>
           </Link>
+          <div className="project-over"></div>
           <div className="project-textBox"> Portfolio Site</div>
         </div>
       </div>

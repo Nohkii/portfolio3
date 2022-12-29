@@ -7,15 +7,16 @@
   height: 20vh;
   display: flex;
   justify-content: center;
-  // background-color: var(--color-point);
   align-items: center;
+  margin: 0 auto;
 }
 .menu-contatiner a {
   text-decoration: none;
   color: black;
-  padding: 3em;
-  width: 4%;
+  // padding: 3em;
+  width: 10%;
   height: 4%;
+  text-align: center;
 }
 .menu-name {
   font-family: var(--font-UbuntuRegular);
@@ -28,16 +29,16 @@
   text-decoration: underline;
 }
 @media (max-width: 425px) {
-  .menu-name b{
+  .menu-name b {
     font-size: 0.8em;
   }
   .menu-contatiner a {
     padding: 1.7em;
   }
-  .menu-contatiner{
+  .menu-contatiner {
     width: 100vw;
     margin: 0 auto;
-  } 
+  }
 }
 @media (max-width: 600px) {
   .menu-name {
@@ -46,8 +47,8 @@
   .menu-contatiner a {
     padding: 2.2em;
   }
-  .menu-contatiner{
+  .menu-contatiner {
     width: 100vw;
     margin: 0 auto;
-  } 
+  }
 }
