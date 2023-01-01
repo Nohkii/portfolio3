@@ -13,14 +13,13 @@
 .menu-contatiner a {
   text-decoration: none;
   color: black;
-  // padding: 3em;
+  padding: 1.3em;
   width: 10%;
   height: 4%;
   text-align: center;
 }
-.menu-name {
+.menu-name b {
   font-family: var(--font-UbuntuRegular);
-  font-weight: lighter;
   color: var(--color-main-skyblue);
   font-size: 1.2em;
 }
@@ -28,27 +27,31 @@
   color: hsl(204, 92%, 35%);
   text-decoration: underline;
 }
+
 @media (max-width: 425px) {
-  .menu-name b {
-    font-size: 0.8em;
-  }
   .menu-contatiner a {
-    padding: 1.7em;
+    width: 1%;
+    padding: 0.4em;
   }
-  .menu-contatiner {
-    width: 100vw;
-    margin: 0 auto;
+  .menu-name b {
+    font-size: 0.3em;
   }
 }
-@media (max-width: 600px) {
-  .menu-name {
+@media (max-width: 768px) {
+  .menu-contatiner a {
+    width: 5%;
+    padding: 1.5em;
+  }
+  .menu-name b {
     font-size: 1em;
   }
+}
+@media (max-width: 1024px) {
   .menu-contatiner a {
-    padding: 2.2em;
+    width: 8%;
+    padding: 1.2em;
   }
-  .menu-contatiner {
-    width: 100vw;
-    margin: 0 auto;
+  .menu-name b {
+    font-size: 1em;
   }
 }
