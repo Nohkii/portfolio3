@@ -20,7 +20,8 @@ const Project = () => {
             {" "}
             <span>
               API를 활용한 음식 검색 사이트 입니다.
-              <br /> <br /> 처음으로 완성한 개인 프로젝트이며 HTML, CSS, Vanilla JS를 활용해 만들었습니다.{" "}
+              <br /> <br /> 처음으로 완성한 개인 프로젝트이며 HTML, CSS, Vanilla
+              JS를 활용해  <br />만들었습니다.{" "}
             </span>
           </div>
           <div className="project-textBox">Food Search API Site</div>
@@ -38,26 +39,39 @@ const Project = () => {
             }
           >
             <span>
-              일정을 관리할 수 있는 Todo List 입니다.
-              <br /> <br />React, Css module을 활용해 만들었습니다.{" "}
+              일정을 관리할 수 있는 <br />Todo List 입니다.
+              <br /> <br />
+              React, Css module을 활용해 <br />만들었습니다.{" "}
             </span>
           </div>
           <div className="project-textBox">Todo List</div>
         </div>
+
+        <div className="project-all-middleTwo">
+          <div className="project-midTwo-box"></div>
+            <div className="project-over">
+              <span>
+                기존 홈페이지를 리뉴얼하는  <br />기업연계 팀 프로젝트를 진행중입니다.
+                <br />
+                <br />
+                Html, Sass, JavaScript를 활용해  <br />제작하고 있으며, 추후 업데이트  <br />될 예정입니다.{" "}
+              </span>
+            </div>
+          <div className="project-textBox"> Team project site</div>
+        </div>
+
         <div className="project-all-right">
-          
-            <div className="project-right-box"></div>
-          
+          <div className="project-right-box"></div>
           <Link to="/">
-          <div className="project-over">
-            <span>
-              저를 소개하는 포트폴리오 사이트입니다.
-              <br />
-              <br />
-              React, Sass를 활용해 만들었으며, 디자인부터 기능 구현까지 혼자
-              진행했습니다.{" "}
-            </span>
-          </div>
+            <div className="project-over">
+              <span>
+                저를 소개하는 포트폴리오 사이트입니다.
+                <br />
+                <br />
+                Html, Sass, React를 활용해  <br />만들었으며, 디자인부터 기능 구현까지 혼자
+                진행했습니다.{" "}
+              </span>
+            </div>
           </Link>
           <div className="project-textBox"> Portfolio Site</div>
         </div>
